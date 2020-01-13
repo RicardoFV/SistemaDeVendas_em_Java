@@ -6,7 +6,7 @@ import java.util.List;
  *
  * @author Ricardo
  */
-public class Venda_ProdutosPersistencia implements Persistencia{
+public class PersistenciaProduto implements Persistencia{
 
     @Override
     public void inserir(Object object) {

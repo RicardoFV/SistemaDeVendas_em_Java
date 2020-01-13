@@ -6,7 +6,7 @@ import java.util.List;
  *
  * @author Ricardo
  */
-public class FornecedorPersistencia implements Persistencia{
+public class PersistenciaFornecedor implements Persistencia{
 
     @Override
     public void inserir(Object object) {

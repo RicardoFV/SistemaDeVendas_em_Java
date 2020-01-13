@@ -10,12 +10,12 @@ import util.Conexao;
  *
  * @author Ricardo
  */
-public class ClientePersistencia extends Conexao implements Persistencia {
+public class PersistenciaCliente extends Conexao implements Persistencia {
 
     private final EntityManager em;
     private Cliente cliente;
 
-    public ClientePersistencia() {
+    public PersistenciaCliente() {
         this.em = getEntityManager();
         this.cliente = new Cliente();
     }

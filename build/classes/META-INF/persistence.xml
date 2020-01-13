@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence>
-   <persistence-unit name="sistemadevendas" transaction-type="RESOURCE_LOCAL">
+    <persistence-unit name="sistema" transaction-type="RESOURCE_LOCAL">
 
-      <properties>
-          <provider>org.hibernate.ejb.HibernatePersistence</provider>
-          <class>entidade.Usuario</class>
+        <properties>
+            <provider>org.hibernate.ejb.HibernatePersistence</provider>
+            <class>entidade.Usuario</class>
+            <class>entidade.Cliente</class>
+            <class>entidade.Fornecedor</class>
+            <class>entidade.Produto</class>
           
-         <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
-         <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
-         <property name="hibernate.connection.username" value="root"/>
-         <property name="hibernate.connection.password" value=""/>
-         <property name="hibernate.connection.url" value="jdbc:mysql://localhost/sistemadevendas"/>
-         <property name="hibernate.max_fetch_depth" value="3"/>
-         <property name="hibernate.format_sql" value="true" />
-         <property name="hibernate.use_sql_comments" value="false" />
-         <property name="hibernate.hbm2ddl.auto" value="false" />
-         <property name="hibernate.show_sql" value="false" />
-         <property name="hibernate.jdbc.batch_size" value="50" />
-      </properties>
-   </persistence-unit>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.connection.password" value=""/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost/sistemadevendas"/>
+            <property name="hibernate.max_fetch_depth" value="3"/>
+            <property name="hibernate.format_sql" value="true" />
+            <property name="hibernate.use_sql_comments" value="true" />
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+            <property name="hibernate.show_sql" value="false" />
+            <property name="hibernate.jdbc.batch_size" value="50" />
+        </properties>
+    </persistence-unit>
 </persistence>
