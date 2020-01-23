@@ -48,7 +48,7 @@ public class PersistenciaUsuario extends Conexao implements Persistencia{
 
     @Override
     public Object listarPorCodigo(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return this.em.find(Usuario.class, id);
     }
 
     @Override
